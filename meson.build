@@ -13,6 +13,9 @@ project(
   ],
 )
 
+add_project_arguments('-O3', '-march=native', language: 'c')
+add_project_arguments('-O3', '-march=native', language: 'cpp')
+
 fs = import('fs')
 
 cc = meson.get_compiler('c')
